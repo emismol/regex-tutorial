@@ -1,12 +1,8 @@
 # All About RegEx
 
-Introductory paragraph (replace this with your text)
-
 Regular Expressions (RegEx) are objects in js that match character combinations in a string to create search patterns which can be used for search and replace functionalities.
 
 ## Summary
-
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 I will be explaining and demoing a replace regex. Please see my code below.
 
