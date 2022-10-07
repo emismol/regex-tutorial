@@ -166,12 +166,41 @@ EXAMPLE:
 
 ### Greedy and Lazy Match
 
+https://javascript.info/regexp-greedy-and-lazy
+In the greedy mode (by default) a quantified character is repeated as many times as possible.
+The regexp engine adds to the match as many characters as it can for .+, and then shortens that one by one, if the rest of the pattern doesn’t match.
+
+The lazy mode of quantifiers is an opposite to the greedy mode. It means: “repeat minimal number of times”.
+We can enable it by putting a question mark '?' after the quantifier, so that it becomes +?
+
 ### Boundaries
+
+https://javascript.info/regexp-boundary
+Boundary represented by \b is used as a test to check that the position of the string is a word boundary
+There are three different positions that qualify as word boundaries:
+At string start, if the first string character is a word character \w.
+Between two characters in the string, where one is a word character \w and the other is not.
+At string end, if the last string character is a word character \w
 
 ### Back-references
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Backreferences
+Backreferences refer to a previously captured group in the same regular expression.
+
 ### Look-ahead and Look-behind
+
+https://javascript.info/regexp-lookahead-lookbehind
+Look-Ahead
+The syntax for a positive is: X(?=Y), it means "look for X, but match only if followed by Y". There may be any pattern instead of X and Y.
+The syntax for a negative is: X(?!Y), it means "search X, but only if not followed by Y".
+
+Look-Behind
+Lookahead allows to add a condition for “what follows" while Lookbehind is similar but different in that it looks behind. Look behind allows a pattern to match only if there’s something before it.
+
+The syntax is:
+Positive lookbehind: (?<=Y)X, matches X, but only if there’s Y before it.
+Negative lookbehind: (?<!Y)X, matches X, but only if there’s no Y before it.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Emily is new to web development while she has basic compsci training from college her career took her in other directions and now she is finding her way back to tech. Please check out some of her work here https://github.com/emismol
